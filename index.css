@@ -1,0 +1,273 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    width: 100%;
+    padding-top: 10%;
+    justify-content: center;
+    flex-direction: column;
+    background: #f582b4;
+    background: linear-gradient(0deg, rgba(245, 130, 180, 1) 0%, rgba(249, 255, 160, 1) 100%);
+}
+
+.header {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(249, 255, 160);
+    background: linear-gradient(0deg, rgba(249, 255, 160, 1) 0%, rgba(245, 130, 180, 1) 100%);
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+}
+
+.logo {
+    height: 80%;
+}
+
+.list-nav {
+    width: 25%;
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+/*.list-nav li {
+    margin: 0px 20px;
+}*/
+
+.a-nav {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ec7d6a;
+}
+
+.section-padre {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section-inicio {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.img-arcoiris {
+    width: 20%;
+    min-width: 300px;
+}
+
+.contenedor-inicio {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+}
+
+.contenedor-inicio img {
+    display: flex;
+    width: 50%;
+    min-width: 290px;
+    max-width: 300px;
+}
+
+.contenedor-inicio p {
+    font-size: 1.5em;
+    min-width: 250px;
+}
+
+.contenedor-inicio button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 40px;
+    background-color: darksalmon;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 30px;
+    min-width: 190px;
+}
+
+.icono-carrito {
+    color: #ec7d6a;
+    font-size: 1.4em;
+}
+
+.navbar {
+    display: flex;
+}
+
+#menu-barras {
+    display: none;
+}
+
+#carrito {
+    font-size: 30px;
+}
+
+#menu {
+    display: none;
+}
+
+.img-sale {
+    border-radius: 15px;
+}
+
+@media (max-width: 1024px) {
+    .contenedor-inicio button {
+        font-size: 1em;
+    }
+
+    .contenedor-inicio p {
+        font-size: 1.5em;
+    }
+
+}
+
+@media(max-width: 960px) {
+    .img-arcoiris {
+        display: none;
+    }
+
+    .contenedor-inicio {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    /*.section-inicio {
+        width: 100%;
+    }*/
+}
+
+@media (max-width: 700px) {
+    .contenedor-inicio {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor-inicio img {
+        margin-bottom: 20px;
+    }
+
+    .contenedor-inicio p {
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+    .navbar ul {
+        background-color: #f6b0ad;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-out;
+    }
+
+    .navbar i {
+        display: block;
+    }
+
+    #menu:checked+.list-nav {
+        transform: translateX(0%);
+        transition: all 0.3s ease-in;
+    }
+
+    .contenedor-inicio {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .img-arcoiris {
+        display: none;
+    }
+
+    .contenedor-inicio p {
+        font-size: 2.0em;
+        text-align: center;
+    }
+}
+
+#section-card {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#section-card h1 {
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    font-size: 3.0em;
+    font-weight: bolder;
+
+}
+
+.div-card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: aliceblue;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 8rem;
+    width: 15rem;
+    margin: 5%;
+    gap: 50px;
+}
+
+.card-text {
+    display: flex;
+    text-align: center;
+    font-weight: 200px;
+}
